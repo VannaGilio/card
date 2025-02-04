@@ -35,3 +35,26 @@ a{
 #menu img{
     height: 16px;
 }
+
+.container{
+    height: 100vh;
+    background-color: rgb(238, 201, 245);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card{
+    background-color: rgb(255, 255, 255);
+    height: 35%;
+    width: 12%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.imagens{
+    height: 39%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}

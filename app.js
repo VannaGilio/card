@@ -32,7 +32,7 @@ function criarItemMenu (disciplina){
     //document.documentElement.style.setProperty('--cor-hover', disciplina.cor)
     novoLink.style = `--cor-hover: ${disciplina.cor}`
     novoImg.src = `./icon/${disciplina.icon}`
-    
+
     novoItem.appendChild(novoImg)
     novoItem.appendChild(novoLink)
 
@@ -40,3 +40,19 @@ function criarItemMenu (disciplina){
 }
 
 disciplinas.forEach(criarItemMenu)
+
+const cardConteudo = [
+    {titulo: 'Rodrigo Garro', imagem: 'garro.jpg', texto: 'Rodrigo Garro é um jogador de Futebol de 27 anos nascido em 1998-01-04, em General Pico, Argentina. Joga como Meia em Corinthians, Brasil.'}
+]
+
+function criarCard (cardConteudo){
+    const card = document.getElementById('card')
+    const novoTitulo = document.createElement('h2')
+    const novoParagrafo = document.createElement('p')
+    const novoImagem = document.createElement('img')
+
+
+    card.appendChild(novoTitulo)
+}
+
+cardConteudo.forEach(criarCard)
