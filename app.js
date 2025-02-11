@@ -75,32 +75,31 @@ const cardConteudo = [
     {titulo: 'Yuri Alberto', imagem: 'yuri.avif', texto: 'Yuri Alberto Monteiro da Silva é um jogador de futebol brasileiro que atua como atacante do Corinthians. Ele nasceu em 18 de março de 2001, em São José dos Campos.'},
     {titulo: 'Hugo Souza', imagem: 'hugo.webp', texto: 'Hugo de Souza Nogueira é um goleiro brasileiro que joga no Corinthians. Ele nasceu em 31 de janeiro de 1999, em Duque de Caxias, no Rio de Janeiro. '},
     {titulo: 'Ángel Romero', imagem: 'romero.jpg', texto: 'Ángel Rodrigo Romero Villamayor (Fernando de la Mora, 4 de julho de 1992) é um futebolista paraguaio que atua como atacante. Atualmente joga pelo Corinthians.'}
-];
+]
 
-function criarCard(cards) { // Renomeado para 'cards' para evitar confusão
-    cards.forEach(card => { // Renomeado para 'card'
-        const container = document.getElementById('container'); // Melhor usar 'container' para clareza
-        const novocard = document.createElement('div');
-        novocard.classList.add('card');
+function criarCard(cards) { 
+    cards.forEach(card => { 
+        const container = document.getElementById('container')
+        const novocard = document.createElement('div')
+        novocard.classList.add('card')
 
-        const novoTitulo = document.createElement('h2');
-        novoTitulo.textContent = card.titulo;
+        const novoTitulo = document.createElement('h2')
+        novoTitulo.textContent = card.titulo
 
-        const novoParagrafo = document.createElement('p');
-        novoParagrafo.textContent = card.texto;
+        const novoParagrafo = document.createElement('p')
+        novoParagrafo.textContent = card.texto
 
-        const novoImagem = document.createElement('img');
-        novoImagem.src = `./img/${card.imagem}`;
-        novoImagem.classList.add('img'); // Adiciona a classe 'img'
+        const novoImagem = document.createElement('img')
+        novoImagem.src = `./img/${card.imagem}`
+        novoImagem.classList.add('img') 
 
-        // Adiciona os elementos *dentro* do novocard
-        novocard.appendChild(novoImagem);
-        novocard.appendChild(novoTitulo);
-        novocard.appendChild(novoParagrafo);
+        novocard.appendChild(novoImagem)
+        novocard.appendChild(novoTitulo)
+        novocard.appendChild(novoParagrafo)
 
-        container.appendChild(novocard); // Adiciona o card completo ao container
-    });
+        container.appendChild(novocard)
+    })
 }
 
-criarCard(cardConteudo); // Passa o array cardConteudo como argumento
+criarCard(cardConteudo)
 
