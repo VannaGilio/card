@@ -80,7 +80,7 @@ a{
 
 #menu{
     background-color: #0a0a0a;
-    color: #bb3737;
+    color: #bbb6b6;
     display: flex;
     justify-content: end;
     gap: 16px;
@@ -97,12 +97,16 @@ a{
 #menu img{
     height: 16px;
 }
+main{
+    background-color: #db6b6b;
 
-.container{
+}
+#container{
+    background-color: #bbb6b6;
     height: 100vh;
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-around;
 }
 .card img {
     width: 100%;

@@ -15,10 +15,10 @@
 //botaoTeste.addEventListener('click', () => console.log('oi')) -> função anonima
 
 const disciplinas = [
-    {nome: 'PWBE', cor: '#ce6db1', icon: 'pwbe.png'},
-    {nome: 'PWFE', cor: '#8f44a7;', icon: 'pwfe.png'},
-    {nome: 'PPDM', cor: '#9c5899', icon: 'ppdm.png'},
-    {nome: 'PRO', cor: '#5c3985', icon: 'pro.png'}
+    {nome: 'PWBE', cor: '#db6b6b', icon: 'pwbe.png'},
+    {nome: 'PWFE', cor: '#db6b6b', icon: 'pwfe.png'},
+    {nome: 'PPDM', cor: '#db6b6b', icon: 'ppdm.png'},
+    {nome: 'PRO', cor: '#db6b6b', icon: 'pro.png'}
 ]
 
 function criarItemMenu (disciplina){
