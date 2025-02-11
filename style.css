@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --cor-hover: #ffffff;
 }
 
@@ -17,8 +17,8 @@ a{
 }
 
 #menu{
-    background-color: rgb(128, 75, 133);
-    color: rgb(218, 209, 223);
+    background-color: #0a0a0a;
+    color: #bb3737;
     display: flex;
     justify-content: end;
     gap: 16px;
@@ -38,23 +38,85 @@ a{
 
 .container{
     height: 100vh;
-    background-color: rgb(238, 201, 245);
+    background-color: #cccccc;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
-#card{
+.card{
     background-color: rgb(255, 255, 255);
     height: 35%;
     width: 12%;
     text-align: center;
     border-radius: 15px;
+    border: 2px solid;
 }
 
-.imagens{
+.img{
     height: 39%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+} */
+:root{
+    --cor-hover: #ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol, li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu{
+    background-color: #0a0a0a;
+    color: #bb3737;
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    padding: 16px;
+}
+#menu a{
+    padding: 8px;
+    transition: .5s;
+    border-radius: 3px;
+}
+#menu a:hover{
+    background-color:var(--cor-hover);
+}
+#menu img{
+    height: 16px;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    height: 35%;
+    width: 12%;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
